@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto/com.example.chat.viewtest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/bt_viewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="viewGroup"/>
+    <Button
+        android:id="@+id/bt_viewGroupVerticalLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vertical"/>
+    <Button
+        android:id="@+id/bt_FlowLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FlowLayout"/>
+    <Button
+        android:id="@+id/bt_zoomLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zoomLayout"/>
+    <Button
+        android:id="@+id/bt_showbigLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="showbigLayout"/>
+    <Button
+        android:id="@+id/bt_messenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="messenger"/>
+    <Button
+        android:id="@+id/bt_bookService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bookService"/>
+    <Button
+        android:id="@+id/bt_ScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ScrollView"/>
+    <Button
+        android:id="@+id/bt_BinderPool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BinderPool"/>
+    <Button
+        android:id="@+id/bt_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="animator"/>
+    <Button
+        android:id="@+id/bt_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bt_point"/>
+
+
+    <com.example.chat.viewtest.widget.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        custom:image="@drawable/b"
+        custom:titleText1="moutch"
+        custom:imageScaleType="fillXY"
+        custom:titleTextColor1="#ff0000"
+        custom:titleTextSize1="20sp"/>
+
+    <!--<com.example.chat.viewtest.widget.CustomProgressBar-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--custom:firstColor="@android:color/black"-->
+        <!--custom:secondColor="@android:color/white"-->
+        <!--custom:circleWidth="16dp"-->
+        <!--custom:speed="10"/>-->
+
+    <com.example.chat.viewtest.widget.CustomVolumControlBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:firstColor="@android:color/black"
+        custom:secondColor="@android:color/white"
+        custom:dotCount="15"
+        custom:splitSize="7"
+        custom:bg="@drawable/b"
+        custom:circleWidth="10dp"/>
+
+</LinearLayout>

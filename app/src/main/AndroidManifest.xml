@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chat.viewtest" >
+
+    <!-- <permission -->
+    <!-- android:name="com.example.chat.viewtest.permission.ACCESS_BOOK_SERVICE" -->
+    <!-- android:protectionLevel="normal"> -->
+    <!-- </permission> -->
+    <!-- <uses-permission -->
+    <!-- android:name="com.example.chat.viewtest.permission.ACCESS_BOOK_SERVICE"> -->
+    <!-- </uses-permission> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewgroupActivity" >
+        </activity>
+        <activity android:name=".ViewGroupVerticalLinear" >
+        </activity>
+        <activity android:name=".FlowActivity" >
+        </activity>
+        <activity android:name=".ZoomActivity" >
+        </activity>
+        <activity android:name=".ShowBigActivity" >
+        </activity>
+
+        <service
+            android:name=".MyServices.MessengerService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" >
+        </service>
+
+        <activity android:name=".UI.MessengerActivity" >
+        </activity>
+
+        <service
+            android:name=".aidl.BookManagerService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.example.chat.viewtest.permission.ACCESS_BOOK_SERVICE"
+            android:process=":BookManagerService" >
+        </service>
+
+        <activity android:name=".UI.BookManagerActivity" >
+        </activity>
+        <activity android:name=".UI.ScrollActivity" >
+        </activity>
+
+        <service
+            android:name=".MyServices.BinderPoolService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity android:name=".UI.BinderPoolActivity" >
+        </activity>
+        <activity android:name=".UI.AnimatorActivity" >
+        </activity>
+        <activity android:name=".PonitActivity" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="titleText1" format="string" />
+    <attr name="titleTextColor1" format="color" />
+    <attr name="titleTextSize1" format="dimension" />
+    <attr name="image" format="reference"/>
+    <attr name="imageScaleType" >
+        <enum name="fillXY" value="0"></enum>
+        <enum name="center" value="1"></enum>
+    </attr>
+
+    <declare-styleable name="CustomTitleView">
+        <attr name="titleText1" />
+        <attr name="titleTextColor1" />
+        <attr name="titleTextSize1" />
+        <attr name="image"></attr>
+        <attr name="imageScaleType"></attr>
+    </declare-styleable>
+
+
+    <attr name="firstColor" format="color"></attr>
+    <attr name="secondColor" format="color"></attr>
+    <attr name="circleWidth" format="dimension"></attr>
+    <attr name="speed" format="integer"></attr>
+
+
+    <declare-styleable name="CustomProgressBar">
+        <attr name="firstColor"></attr>
+        <attr name="secondColor"></attr>
+        <attr name="circleWidth"></attr>
+        <attr name="speed"></attr>
+    </declare-styleable>
+
+    <attr name="dotCount" format="integer"></attr>
+    <attr name="splitSize" format="integer"></attr>
+    <attr name="bg" format="reference"></attr>
+
+
+    <declare-styleable name="CustomVolumControlBar">
+        <attr name="firstColor"></attr>
+        <attr name="secondColor"></attr>
+        <attr name="circleWidth"></attr>
+        <attr name="dotCount" ></attr>
+        <attr name="splitSize" ></attr>
+        <attr name="bg"></attr>
+    </declare-styleable>
+
+
+
+    <attr name="pointCount" format="integer"></attr>
+    <attr name="pointColor" format="color"></attr>
+    <attr name="pointBackColor" format="color"></attr>
+    <attr name="pointSize" format="integer"></attr>
+    <attr name="time" format="integer"></attr>
+
+    <declare-styleable name="CustomProgressPoint">
+        <attr name="pointCount" ></attr>
+        <attr name="pointColor" ></attr>
+        <attr name="pointBackColor"></attr>
+        <attr name="pointSize" ></attr>
+        <attr name="time"></attr>
+
+    </declare-styleable>
+
+
+</resources>
