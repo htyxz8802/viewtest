@@ -17,6 +17,9 @@
         <item name="android:textColor">@android:color/darker_gray</item>
     </style>
 
+    <style name="cardcontent" >
+        <item name="android:orientation">vertical</item>
+    </style>
 
 
 </resources>

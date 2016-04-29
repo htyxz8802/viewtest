@@ -13,11 +13,13 @@ import android.widget.Button;
 import com.example.chat.viewtest.UI.AnimatorActivity;
 import com.example.chat.viewtest.UI.BinderPoolActivity;
 import com.example.chat.viewtest.UI.BookManagerActivity;
+import com.example.chat.viewtest.UI.CoordintorActivity;
 import com.example.chat.viewtest.UI.MessengerActivity;
 import com.example.chat.viewtest.UI.ScrollActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button bt_Coordinator ;
     private Button bt_viewGroup ;
     private Button bt_viewGroupVerticalLinear ;
     private Button bt_FlowLayout ;
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void init(){
+        bt_Coordinator = (Button) findViewById(R.id.bt_Coordinator);
         bt_viewGroup = (Button) findViewById(R.id.bt_viewGroup);
         bt_viewGroupVerticalLinear = (Button) findViewById(R.id.bt_viewGroupVerticalLinear);
         bt_FlowLayout = (Button) findViewById(R.id.bt_FlowLayout);
@@ -55,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void initView(){
+        bt_Coordinator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,CoordintorActivity.class);
+                startActivity(intent);
+            }
+        });
+
         bt_viewGroup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
